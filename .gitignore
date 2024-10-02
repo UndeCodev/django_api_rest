@@ -1,0 +1,26 @@
+# Entorno virtual
+venv/
+env/
+
+# Archivos de configuración de entornos
+*.env
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos estáticos generados
+staticfiles/
+static/
+
+# Archivos de configuración locales
+db.sqlite3
+media/
+
+# Archivos de configuración de Gunicorn
+gunicorn.sock
+
+# Carpetas de IDEs
+.vscode/
+.idea/
