@@ -103,37 +103,37 @@ def descifrar_datos(request):
 # ## Vista para cifrar usando Rabin
 # @csrf_exempt
 
-# # @api_view(['POST'])
-# # def rabin_encrypt_view(request):
-# #     message = request.data.get('message')
+# @api_view(['POST'])
+# def rabin_encrypt_view(request):
+#     message = request.data.get('message')
 
-# #     if message is None:
-# #         return Response({"error": "El campo 'message' es requerido."}, status=400)
+#     if message is None:
+#         return Response({"error": "El campo 'message' es requerido."}, status=400)
 
-# #     try:
-# #         # Convertir el mensaje a entero
-# #         m = int(message)
+#     try:
+#         # Convertir el mensaje a entero
+#         m = int(message)
 
-# #         # Agregar marcador al mensaje original (ejemplo: agregar "999" al final)
-# #         marker = 999
-# #         message_with_marker = int(f"{m}{marker}")
+#         # Agregar marcador al mensaje original (ejemplo: agregar "999" al final)
+#         marker = 999
+#         message_with_marker = int(f"{m}{marker}")
 
-# #         # Generar claves
-# #         p, q = generar_primos()
-# #         n = p * q
+#         # Generar claves
+#         p, q = generar_primos()
+#         n = p * q
 
-# #         # Cifrar el mensaje con marcador
-# #         c = exponenciacion_modular(message_with_marker, 2, n)
+#         # Cifrar el mensaje con marcador
+#         c = exponenciacion_modular(message_with_marker, 2, n)
 
-# #         return Response({
-# #             'ciphertext': c,
-# #             'public_key_n': n,
-# #             'p': p,
-# #             'q': q,
-# #             'marker': marker  # Devuelve el marcador para referencia
-# #         })
-# #     except Exception as e:
-# #         return Response({"error": f"Error al cifrar el mensaje: {str(e)}"}, status=500)
+#         return Response({
+#             'ciphertext': c,
+#             'public_key_n': n,
+#             'p': p,
+#             'q': q,
+#             'marker': marker  # Devuelve el marcador para referencia
+#         })
+#     except Exception as e:
+#         return Response({"error": f"Error al cifrar el mensaje: {str(e)}"}, status=500)
     
 # # Vista para descifrar usando Rabin
 # @csrf_exempt
